@@ -1,0 +1,40 @@
+body {
+  background-color: #f5f5dc;
+}
+
+
+.header{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.header > .photo {
+    float: left;
+    width: 25%;
+}
+.header > .block2{
+    
+    width: 75%;
+}
+
+.block2 > .block3{
+    text-align: left;
+}
+
+.block3 > .address{
+    text-align: left;
+}
+
+.block3 > .contact{
+    text-align: right
+}
+
+h1{
+    font: Lucida Sans Unicode, sans-serif;
+    
+}
+h1 > span{
+    color: #ea645b;
+    
+}
