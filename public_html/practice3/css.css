@@ -1,40 +1,47 @@
-body {
-  background-color: #f5f5dc;
+*{
+    font-family: Verdana, Geneva, sans-serif;
 }
 
+body {
+ background-color: #f5f5dc;
+}
+
+.all{
+    width: 75%;
+    margin: 0 auto;
+} 
 
 .header{
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-
-.header > .photo {
-    float: left;
-    width: 25%;
-}
-.header > .block2{
-    
-    width: 75%;
-}
-
-.block2 > .block3{
-    text-align: left;
-}
-
-.block3 > .address{
-    text-align: left;
-}
-
-.block3 > .contact{
-    text-align: right
-}
-
-h1{
-    font: Lucida Sans Unicode, sans-serif;
+    display: flex;
     
 }
-h1 > span{
-    color: #ea645b;
-    
+
+.photo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.photo > img{
+    height: auto;
+    margin: auto;
+    border-radius: 50%;
+ }
+
+.header-right{
+    width: 80%
+}
+
+.Name span{
+   color: #e84c3d;
+   
+}
+
+.myinfo{
+    display: flex;
+    justify-content: space-between;
+ }
+
+hr{
+    border: 1px solid #e84c3d;
 }
