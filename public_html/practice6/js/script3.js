@@ -11,7 +11,14 @@ document.addEventListener("DOMContentLoaded",
     const company_name=document.getElementById("company_name");
     const Job=document.getElementById("Job");
     const content=document.getElementById("content");
+    
+     
     btn.onclick=()=>{
+        if (counter==5){
+                  document.location.reload();
+                  counter=0;
+                  
+              }
        $ajaxUtils
           .sendGetRequest(`https://reqres.in/api/users/${counter}`, 
             (request) => {
@@ -31,10 +38,7 @@ document.addEventListener("DOMContentLoaded",
                 </ul>
                                 `;
             
-              if (counter==5){
-                  document.location.reload();
-                  counter=0;
-              }
+              
               counter++;
               
             });
