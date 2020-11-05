@@ -11,11 +11,18 @@ document.addEventListener("DOMContentLoaded",
     const company_name=document.getElementById("company_name");
     const Job=document.getElementById("Job");
     const content=document.getElementById("content");
+    
+     
     btn.onclick=()=>{
+        if (counter==5){
+                  document.location.reload();
+                  counter=0;
+                  
+              }
        $ajaxUtils
-          .sendGetRequest(`https://reqres.in/api/users/${counter}`, 
+          .sendGetRequest(`https://leonidlunin-practice8.herokuapp.com/users/${counter}`, 
             (request) => {
-              const data = (JSON.parse(request.responseText));
+              const data = (JSON.parse(request.responseText))[0];
               first_name.innerHTML=data.data.first_name;
               last_name.innerHTML=' ' + data.data.last_name;
               image.src=data.data.avatar;
@@ -32,11 +39,10 @@ document.addEventListener("DOMContentLoaded",
                                 `;
             
               
-              if (counter==12){
-                  counter=0;
-              }
               counter++;
               
             });
-    }
+            
+            
+   }
   });
