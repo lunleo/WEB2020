@@ -4,39 +4,33 @@ body {
 }
 
 .header {
-    display: flex;
+    position: relative;
     width: 100%;
     background-color: #545454;
     font-size: 2.2rem;
     color: white;
 }
 
-.header_logo {
-    width: 8%;
-    outline: 2px solid black;
+.logo {
+    position: absolute;
+    height: 12vh;
+    top: 2vh;
+    left: 1%;
+    width: 6%;
 }
 
-.header_logo img {
+.logo img {
+    margin: 0 auto;
     width: 80%;
 }
 
 .navbar {
-    left: -10%;
-    width: 90%;
     text-align: center;
-    outline: 2px solid red;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin: 0 auto;
 }
 
-.navbar_menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.navbar_item {
+.button {
+    display: inline-block;
     padding: 2% 5%;
     transition: 0.3s;
     -webkit-transition: 0.3s;
@@ -45,9 +39,12 @@ body {
     -o-transition: 0.3s;
 }
 
-.navbar_item {}
+.button a {
+    text-decoration: none;
+    color: white;
+}
 
-.navbar_item:hover {
+.button:hover {
     background: black;
     transition: 0.4s;
     -webkit-transition: 0.4s;
@@ -60,7 +57,7 @@ body {
     background-color: gray;
 }
 
-.market a {
+.menu a {
     text-decoration: none;
     color: black;
     margin: 10%;
@@ -71,7 +68,7 @@ body {
     -o-transition: 0.2s;
 }
 
-.market a:hover {
+.menu a:hover {
     transform: scale(1.2);
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
@@ -84,7 +81,7 @@ body {
     -o-transition: 0.2s;
 }
 
-.market {
+.menu {
     width: 60%;
     margin: 0 auto;
     font-size: 1.3rem;
@@ -94,11 +91,11 @@ body {
     grid-template-rows: repeat(2, 1fr);
 }
 
-.market img {
+.menu img {
     width: 100%;
 }
 
-.market .main {
+.menu .main {
     margin: 0;
     padding: 0;
     font-size: 1.5rem;
