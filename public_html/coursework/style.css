@@ -79,7 +79,7 @@ body {
     }
 }
 
-.button a {
+.navbar a {
     text-decoration: none;
     color: white;
 }
@@ -137,10 +137,66 @@ body {
     font-size: 1.5rem;
 }
 
+.title {
+    padding: 1%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+table {
+    margin-bottom: 10px;
+    margin: 0 auto;
+    width: 90%;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 1rem;
+    border-radius: 10px;
+    border-spacing: 0;
+    text-align: center;
+}
+
+th {
+    background: #BCEBDD;
+    color: white;
+    text-shadow: 0 1px 1px #2D2020;
+    padding: 10px 20px;
+}
+
+th,
+td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+}
+
+th:first-child {
+    border-top-left-radius: 10px;
+}
+
+th:last-child {
+    border-top-right-radius: 10px;
+    border-right: none;
+}
+
+td {
+    padding: 10px 20px;
+    background: #F8E391;
+}
+
+tr:last-child td:first-child {
+    border-radius: 0 0 0 10px;
+}
+
+tr:last-child td:last-child {
+    border-radius: 0 0 10px 0;
+}
+
+tr td:last-child {
+    border-right: none;
+}
+
 .footer {
-    position: fixed;
-    bottom: 0px;
     width: 100%;
+    margin-top: 1%;
     padding: 0.5%;
     background-color: #545454;
     font-size: 1rem;
